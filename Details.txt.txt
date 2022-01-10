@@ -1,0 +1,32 @@
+Front End: Vuetify JS
+Back End: Node JS
+
+Database: MSSQL
+
+Table Structure:
+	Table: UsersTable
+	Columns: 
+		UserCode -> i use npm ShortID for auto generate of ID (NVARCHAR 50) Primary key
+      		Firstname -> (VARCHAR 50)
+      		Lastname -> (VARCHAR 100)
+      		AccountType -> (VARCHAR 10)
+      		Username -> (NVARCHAR 50)
+     		Password -> (NVARCHAR 10)
+		DeleteReason -> (NVARCHAR 100)
+      		PhysicalAddress -> (NVARCHAR 200)
+     		CreatedDate -> DATETIME
+     		DeletedDate -> DATETIME
+     		UpdatedDate -> DATETIME
+      		UpdatedBy -> (VARCHAR 100)
+
+Finished functions:
+	Get Data for HOME filter by DeletedDate IS NULL
+	Get Data for Restore function filter by DeletedDate IS NOT NULL
+	Update function
+	Restore function
+	Soft Delete function
+
+	Not finished: 
+		Search
+		Pagination
+		Limit
